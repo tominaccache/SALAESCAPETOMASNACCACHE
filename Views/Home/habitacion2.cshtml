@@ -1,0 +1,28 @@
+
+@{
+    ViewData["Title"] = "Habitacion2";
+}
+<div>
+    <h1>Habitacion 2</h1>
+</div>
+<div>
+    <p>
+        En tu cama no me meto, a menos que me haya muerto,que no podré dormir despierto y me tendré que estar quieto
+    </p>
+</div>
+<form method="post" action='@Url.Action("Habitacion","Home")'>
+     <div class="form-group">
+        <input  class="form-control"  type="text" name="clave" autocomplete="off" required> 
+        <input  type="hidden" name="sala" value="2"> 
+    </div>
+    <div class="form-group mt-2">
+        <input  class="btn btn-success"  type="submit" name="">
+        <button class="btn btn-secondary" type="button" onclick="alert('la palabra tiene 5 letras')">Pista</button>
+    </div>
+</form>
+<div class="text-center img">
+    <img src="/img/ataud.jpg" alt="">
+</div>
+
+ @ViewBag.Error
+
